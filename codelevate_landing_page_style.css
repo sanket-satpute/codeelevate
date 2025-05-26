@@ -1689,7 +1689,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .social-links {
@@ -1702,9 +1702,9 @@ footer {
 .social-link {
     background: rgba(255, 165, 0, 0.2);
     color: var(--white);
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 1rem;
     /* border-radius: var(--border-radius); */
-    border-radius: 17px;
+    border-radius: 20px;
     text-decoration: none;
     transition: var(--transition);
 }

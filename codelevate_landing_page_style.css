@@ -1678,6 +1678,7 @@ footer {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: var(--transition);
+    font-size: 1.1rem;
 }
 
 .footer-section a:hover {
@@ -1695,14 +1696,15 @@ footer {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .social-link {
     background: rgba(255, 165, 0, 0.2);
     color: var(--white);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
+    padding: 0.4rem 0.8rem;
+    /* border-radius: var(--border-radius); */
+    border-radius: 17px;
     text-decoration: none;
     transition: var(--transition);
 }

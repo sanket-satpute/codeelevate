@@ -378,7 +378,7 @@ nav .container {
             position: fixed;
             top: 0;
             right: -100%;
-            width: 340px;
+            width: 70%;
             height: 100vh;
             background: var(--white);
             box-shadow: var(--shadow-strong);
@@ -595,6 +595,7 @@ nav .container {
             .mobile-menu-toggle {
                 display: flex;
             }
+            
 
             .logo img {
                 width: 160px;
@@ -608,7 +609,7 @@ nav .container {
 
         @media (max-width: 480px) {
             .mobile-menu {
-                width: 300px;
+                width: 90%;
                 padding: 80px 25px 25px;
             }
 

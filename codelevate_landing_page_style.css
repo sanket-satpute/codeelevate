@@ -428,6 +428,7 @@ nav .container {
         .mobile-cta {
             margin-top: 30px;
             padding: 0;
+            margin-bottom: 100px;
         }
 
         .mobile-cta .btn-primary {

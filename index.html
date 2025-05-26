@@ -24,11 +24,93 @@
                     <a href="#course">Course</a>
                     <a href="#why-us">Why Us</a>
                     <a href="#contact">Contact</a>
-                    <a href="#" class="cta-nav">Join WhatsApp</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1X3WKBBcwtxF4MGh6PFPZ94TtP15NARCQ" target="_blank">Download Brochure</a>
+                    <a href="#" class="cta-nav" onclick="whatsappGroupJoin()">Join WhatsApp</a>
+                </div>
+
+                 <!-- Mobile Menu Toggle -->
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="#about" onclick="closeMobileMenu()">
+                <i class="fas fa-info-circle"></i>
+                <span>About Us</span>
+            </a>
+            <a href="#course" onclick="closeMobileMenu()">
+                <i class="fas fa-book"></i>
+                <span>Course Details</span>
+            </a>
+            <a href="#why-us" onclick="closeMobileMenu()">
+                <i class="fas fa-star"></i>
+                <span>Why Choose Us</span>
+            </a>
+            <a href="#contact" onclick="closeMobileMenu()">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1X3WKBBcwtxF4MGh6PFPZ94TtP15NARCQ" target="_blank" onclick="closeMobileMenu()">
+                <i class="fas fa-download"></i>
+                <span>Download Brochure</span>
+            </a>
+        </div>
+        
+        <!-- Premium Mentors Section -->
+        <div class="mentors-section">
+            <div class="mentors-title">
+                <i class="fas fa-users"></i>
+                <span>Meet Our Mentors</span>
+            </div>
+            
+            <div class="mentor-card">
+                <div class="mentor-badge">Lead</div>
+                <div class="mentor-header">
+                    <div class="mentor-avatar">SS</div>
+                    <div class="mentor-info">
+                        <h4>Sanket Satpute</h4>
+                        <div class="mentor-role">Lead Mentor • Java Developer</div>
+                    </div>
+                </div>
+                <div class="mentor-contact">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919325571685">+91 93255 71685</a>
+                </div>
+            </div>
+            
+            <div class="mentor-card">
+                <div class="mentor-badge">Pro</div>
+                <div class="mentor-header">
+                    <div class="mentor-avatar">HG</div>
+                    <div class="mentor-info">
+                        <h4>Harshal Gaddekar</h4>
+                        <div class="mentor-role">Co-Mentor • C++ Developer</div>
+                    </div>
+                </div>
+                <div class="mentor-contact">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919075909891">+91 90759 09891</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-cta">
+            <a href="#" class="btn-primary" onclick="closeMobileMenu()">
+                <i class="fab fa-whatsapp"></i>
+                <span>Join WhatsApp Group</span>
+            </a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">

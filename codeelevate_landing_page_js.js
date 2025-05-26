@@ -58,6 +58,68 @@ function whatsappGroupJoin() {
     window.open(whatsappgroupjoinlink, '_blank');
 }
 
+function downloadBroucher() {
+    alert("ok");
+}
+
+
+// for mobile hamburger
+// Mobile Menu Functions
+        function toggleMobileMenu() {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+            const menu = document.querySelector('.mobile-menu');
+            
+            toggle.classList.toggle('active');
+            overlay.classList.toggle('active');
+            menu.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        function closeMobileMenu() {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+            const menu = document.querySelector('.mobile-menu');
+            
+            toggle.classList.remove('active');
+            overlay.classList.remove('active');
+            menu.classList.remove('active');
+            
+            // Restore body scroll
+            document.body.style.overflow = '';
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.mobile-menu');
+            
+            if (!toggle.contains(event.target) && !menu.contains(event.target)) {
+                closeMobileMenu();
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = 'var(--shadow-soft)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
 
 // model chat with mentors
 let selectedMentor = null;
